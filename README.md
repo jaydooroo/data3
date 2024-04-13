@@ -18,6 +18,7 @@ The repository includes data from two primary sources:
 
 The results of the analysis are stored in the following files:
 - GDP growth analysis.docx : analysis on this research.
+- data3_final.do: This have stata do file that you can run with the data provided above to see the results of our research.
 
 ## Conclusion
 
