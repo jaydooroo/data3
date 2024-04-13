@@ -1,12 +1,30 @@
-# data3
-To accomplish our statistical experiments, we should collect data that includes technological status and GDP. To do this, we used “Penn World Table” data which contains the nations’ real GDP,  relative levels of income, output, input, and productivity, covering 183 countries between 1950 and 2019. This data is very useful to track how the GDP of the nations in the world changes over time. 
+# Research on Technological Advances and GDP Growth
 
-	To retrieve the data for technological status, we used NBER data which contains an unbalanced panel dataset with information on the specific amount of how well the nations adopted over 100 technologies in more than 150 countries since 1800. we used this data as an indicator of each country's technological status and we will track how technological adoption and advancements of each country change over time.
+This repository contains all the necessary data and scripts used in the research paper exploring the relationship between technological advances and GDP growth across developed and developing countries. The research investigates if technological growth correlates with economic growth as represented by GDP, using statistical analysis of historical data.
 
-These two datasets are not useful for themselves. We had to merge two datasets and make some modifications to use them for our research. We added variables for GDP growth and technological variables growth which are calculated according to variables of each year. The formula is like this “(value of current year)  / (value of previous year)  - 1  ) x 100”. This represents the percentage of Growth for each variable. 
-Since we also examined whether developed countries have higher GDP and technological growth overall, we created a variable “developed” which is a dummy variable. The developed countries in this research only include (France, Germany, Italy, Japan, the United Kingdom, and the United States of America). Other countries are classified as developing countries with 0 value of the “developed” variable.  We only used 5 selected technologies for our research. The variables are radio (radio), telephone(telephone), tv(tv), car (vehicle_car), and electricity production (elecprod). We only used data from 1970 to 2000. 
+## Data Description
 
-The source of data will be found below: 
-Penn World Table data:  https://www.rug.nl/ggdc/productivity/pwt/
-NBER data: https://data.nber.org/data-appendix/w15319/
+The repository includes data from two primary sources:
+
+1. **Penn World Table (PWT):** Provides comprehensive data on relative levels of income, output, inputs, and productivity for 183 countries spanning from 1950 to 2019.
+   - **Data Source:** [Penn World Table](https://www.rug.nl/ggdc/productivity/pwt/)
+   - **File:** `pwt_1001.csv` - This file contains the real GDP, income levels, and productivity measures extracted from the Penn World Table.
+
+2. **NBER Technological Data:** Features an unbalanced panel dataset with information on the adoption of over 100 technologies in more than 150 countries since 1800.
+   - **Data Source:** [NBER Technology Data](https://data.nber.org/data-appendix/w15319/)
+   - **File:** `chat.dta` - This file includes data on technological adoption rates for specified technologies across various countries.
+
+## Results
+
+The results of the analysis are stored in the following files:
+- GDP growth analysis.docx : analysis on this research.
+
+## Conclusion
+
+The findings suggest a positive correlation between technological advancement and GDP growth, particularly in developed countries. The scripts provided facilitate replication of the analysis and further exploration of the data.
+
+## Further Research
+
+Further investigations could explore the causality between technological growth and GDP and the impact of R&D investments on economic growth. Researchers are encouraged to extend the datasets and analytical methods used in this study.
+
 
